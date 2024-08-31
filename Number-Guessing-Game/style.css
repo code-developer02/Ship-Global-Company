@@ -1,0 +1,96 @@
+/* styles.css */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #cce7ff 0%, #99ccff 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #333;
+}
+
+.game-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.2s;
+}
+
+.game-container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+}
+
+p {
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    padding: 15px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 34px);
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 34px);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button#submit-guess {
+    background: #007bff;
+    color: white;
+}
+
+button#submit-guess:hover {
+    background: #0056b3;
+    transform: scale(1.02);
+}
+
+button#restart-game {
+    background: #28a745;
+    color: white;
+    margin-top: 15px;
+}
+
+button#restart-game:hover {
+    background: #218838;
+    transform: scale(1.02);
+}
+
+#feedback {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#attempts {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #666;
+}
